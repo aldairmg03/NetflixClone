@@ -33,7 +33,8 @@ private extension HomeViewController {
     
     func setup() {
         view.backgroundColor = .systemBackground
-        homeFeedTable.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 350))
+        let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 400))
+        homeFeedTable.tableHeaderView = headerView
         addViews()
         setConstraints()
     }
