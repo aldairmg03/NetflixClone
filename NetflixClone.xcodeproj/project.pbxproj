@@ -16,6 +16,7 @@
 		CF5BB9E928C9A2C1006DCE95 /* UpcommingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5BB9E828C9A2C1006DCE95 /* UpcommingViewController.swift */; };
 		CF5BB9EC28C9A2E2006DCE95 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5BB9EB28C9A2E2006DCE95 /* SearchViewController.swift */; };
 		CF5BB9EF28C9A300006DCE95 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5BB9EE28C9A300006DCE95 /* DownloadsViewController.swift */; };
+		CF5BB9F828C9ACB1006DCE95 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5BB9F728C9ACB1006DCE95 /* CollectionViewTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CF5BB9E828C9A2C1006DCE95 /* UpcommingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcommingViewController.swift; sourceTree = "<group>"; };
 		CF5BB9EB28C9A2E2006DCE95 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		CF5BB9EE28C9A300006DCE95 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
+		CF5BB9F728C9ACB1006DCE95 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,9 @@
 		CF5BB9CB28C99D86006DCE95 /* NetflixClone */ = {
 			isa = PBXGroup;
 			children = (
+				CF5BB9F628C9AB8F006DCE95 /* Models */,
+				CF5BB9F528C9AB8A006DCE95 /* Views */,
+				CF5BB9F328C9AB78006DCE95 /* ViewModels */,
 				CF5BB9E328C9A137006DCE95 /* Controller */,
 				CF5BB9CC28C99D86006DCE95 /* AppDelegate.swift */,
 				CF5BB9CE28C99D86006DCE95 /* SceneDelegate.swift */,
@@ -82,6 +87,28 @@
 				CF5BB9EE28C9A300006DCE95 /* DownloadsViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF5BB9F328C9AB78006DCE95 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CF5BB9F528C9AB8A006DCE95 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF5BB9F728C9ACB1006DCE95 /* CollectionViewTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CF5BB9F628C9AB8F006DCE95 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +182,7 @@
 			files = (
 				CF5BB9EC28C9A2E2006DCE95 /* SearchViewController.swift in Sources */,
 				CF5BB9D128C99D86006DCE95 /* MainTabBarViewController.swift in Sources */,
+				CF5BB9F828C9ACB1006DCE95 /* CollectionViewTableViewCell.swift in Sources */,
 				CF5BB9EF28C9A300006DCE95 /* DownloadsViewController.swift in Sources */,
 				CF5BB9CD28C99D86006DCE95 /* AppDelegate.swift in Sources */,
 				CF5BB9E928C9A2C1006DCE95 /* UpcommingViewController.swift in Sources */,
