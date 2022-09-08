@@ -13,6 +13,9 @@
 		CF5BB9D628C99D87006DCE95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF5BB9D528C99D87006DCE95 /* Assets.xcassets */; };
 		CF5BB9D928C99D87006DCE95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5BB9D728C99D87006DCE95 /* LaunchScreen.storyboard */; };
 		CF5BB9E528C9A17C006DCE95 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5BB9E428C9A17C006DCE95 /* HomeViewController.swift */; };
+		CF5BB9E928C9A2C1006DCE95 /* UpcommingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5BB9E828C9A2C1006DCE95 /* UpcommingViewController.swift */; };
+		CF5BB9EC28C9A2E2006DCE95 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5BB9EB28C9A2E2006DCE95 /* SearchViewController.swift */; };
+		CF5BB9EF28C9A300006DCE95 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5BB9EE28C9A300006DCE95 /* DownloadsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		CF5BB9D828C99D87006DCE95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF5BB9DA28C99D88006DCE95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF5BB9E428C9A17C006DCE95 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CF5BB9E828C9A2C1006DCE95 /* UpcommingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcommingViewController.swift; sourceTree = "<group>"; };
+		CF5BB9EB28C9A2E2006DCE95 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CF5BB9EE28C9A300006DCE95 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,9 @@
 			isa = PBXGroup;
 			children = (
 				CF5BB9E428C9A17C006DCE95 /* HomeViewController.swift */,
+				CF5BB9E828C9A2C1006DCE95 /* UpcommingViewController.swift */,
+				CF5BB9EB28C9A2E2006DCE95 /* SearchViewController.swift */,
+				CF5BB9EE28C9A300006DCE95 /* DownloadsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -144,8 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF5BB9EC28C9A2E2006DCE95 /* SearchViewController.swift in Sources */,
 				CF5BB9D128C99D86006DCE95 /* MainTabBarViewController.swift in Sources */,
+				CF5BB9EF28C9A300006DCE95 /* DownloadsViewController.swift in Sources */,
 				CF5BB9CD28C99D86006DCE95 /* AppDelegate.swift in Sources */,
+				CF5BB9E928C9A2C1006DCE95 /* UpcommingViewController.swift in Sources */,
 				CF5BB9CF28C99D86006DCE95 /* SceneDelegate.swift in Sources */,
 				CF5BB9E528C9A17C006DCE95 /* HomeViewController.swift in Sources */,
 			);
