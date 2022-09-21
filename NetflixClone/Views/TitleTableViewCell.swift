@@ -68,7 +68,7 @@ private extension TitleTableViewCell {
         NSLayoutConstraint.activate([
             titlePosterImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             titlePosterImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
-            titlePosterImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
+            titlePosterImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
             titlePosterImageView.widthAnchor.constraint(equalToConstant: 100)
         ])
         
