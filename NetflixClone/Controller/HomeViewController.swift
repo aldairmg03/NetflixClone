@@ -22,7 +22,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        getTrendingMoviews()
+        fetchData()
     }
     
     override func viewWillLayoutSubviews() {
@@ -30,14 +30,30 @@ class HomeViewController: UIViewController {
         homeFeedTable.frame = view.bounds
     }
     
-    private func getTrendingMoviews() {
-        APICaller.shared.getTrendingMovies { results in
+    private func fetchData() {
+        /*APICaller.shared.getTrendingMovies { results in
             switch results {
             case .success(let movies):
                 print(movies)
             case .failure(let error):
                 print(error)
             }
+        }*/
+        
+        /*APICaller.shared.getTrendingTvs { results in
+            
+        }*/
+        
+        /*APICaller.shared.getUpcommingMovies { results in
+            
+        }*/
+        
+        /*APICaller.shared.getPopularMovies { _ in
+            
+        }*/
+        
+        APICaller.shared.getTopRatedMovies { _ in
+            
         }
     }
 
