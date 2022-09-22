@@ -77,5 +77,4 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
-NetflixClone.xcodeproj/project.pbxproj
 NetflixClone.xcodeproj/xcuserdata/aldair.xcuserdatad/xcschemes/xcschememanagement.plist
