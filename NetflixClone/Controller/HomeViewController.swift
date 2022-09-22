@@ -30,10 +30,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        
-        APICaller.shared.getMovie(with: "Avengers") { _ in
-            
-        }
     }
     
     override func viewWillLayoutSubviews() {

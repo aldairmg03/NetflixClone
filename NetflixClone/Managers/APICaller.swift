@@ -157,10 +157,9 @@ class APICaller {
             }
             do {
                 let results = try JSONDecoder().decode(YoutubeSearchResponse.self, from: data)
-                print(results)
+                completion(.success(results.items[0]))
             } catch {
-                print(error.localizedDescription)
-                //completion(.failure(APIError.failedTogetData))
+                completion(.failure(APIError.failedTogetData))
             }
         }
         task.resume()
