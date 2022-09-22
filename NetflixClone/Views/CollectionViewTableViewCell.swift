@@ -71,6 +71,10 @@ private extension CollectionViewTableViewCell {
         
     }
     
+    func downloadTitleAt(indexPath: IndexPath) {
+        print(titles[indexPath.row].original_title)
+    }
+    
 }
 
 extension CollectionViewTableViewCell: UICollectionViewDelegate {
@@ -93,6 +97,20 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate {
             }
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, contextMenuConfigurationForItemAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
+        let config = UIContextMenuConfiguration(
+            identifier: nil,
+            previewProvider: nil) { [weak self] _ in
+                let downloadAction = UIAction(title: "Download", image: nil, identifier: nil, discoverabilityTitle: nil, state: .off) { _ in
+                    self?.downloadTitleAt(indexPath: indexPath)
+                }
+                return UIMenu(title: "", image: nil, identifier: nil, options: .displayInline, children: [downloadAction])
+            }
+        
+        return config
+    }
+    
 }
 
 extension CollectionViewTableViewCell: UICollectionViewDataSource {
