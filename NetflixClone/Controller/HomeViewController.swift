@@ -17,6 +17,9 @@ enum Sections: Int {
 
 class HomeViewController: UIViewController {
     
+    private var ramdomTrendingMoview: Title?
+    private var headerView: HeroHeaderUIView?
+    
     private let sectionTitles: [String] = ["Trending Movies", "Trending Tv", "Popular",  "Upcoming Movies", "Top rated"]
 
     private lazy var homeFeedTable: UITableView = {
@@ -46,10 +49,11 @@ private extension HomeViewController {
         
         configureNavbar()
         
-        let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 400))
+        headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 400))
         homeFeedTable.tableHeaderView = headerView
         addViews()
         setConstraints()
+        configureHeroHeaderView()
     }
     
     func addViews() {
@@ -71,6 +75,22 @@ private extension HomeViewController {
         ]
         
         navigationController?.navigationBar.tintColor = .white
+    }
+    
+    func configureHeroHeaderView() {
+        APICaller.shared.getTrendingMovies { [weak self] result in
+            switch result {
+            case .success(let titles):
+                let selectedTitle = titles.randomElement()
+                self?.ramdomTrendingMoview = selectedTitle
+                self?.headerView?.configure(with:
+                                                TitleViewModel(
+                                                    titleName: selectedTitle?.original_title ?? "",
+                                                    posterURL: selectedTitle?.poster_path ?? ""))
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
 }
