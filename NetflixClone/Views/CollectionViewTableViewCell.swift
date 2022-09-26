@@ -72,7 +72,15 @@ private extension CollectionViewTableViewCell {
     }
     
     func downloadTitleAt(indexPath: IndexPath) {
-        print(titles[indexPath.row].original_title)
+        DataPersistenceManager.shared.saveTitle(with: titles[indexPath.row]) { result in
+            switch result {
+            case .success(let success):
+                print("Save to database")
+                NotificationCenter.default.post(name: NSNotification.Name("downloaded"), object: nil)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
 }
